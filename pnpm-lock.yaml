@@ -5,12 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@hono/zod-validator':
+    specifier: ^0.2.2
+    version: 0.2.2(hono@4.4.3)(zod@3.23.8)
   '@types/node':
     specifier: ^20.14.0
     version: 20.14.0
   eslint:
     specifier: ^8.57.0
     version: 8.57.0
+  hono:
+    specifier: ^4.4.3
+    version: 4.4.3
   np:
     specifier: ^7.7.0
     version: 7.7.0
@@ -23,6 +29,9 @@ devDependencies:
   typescript:
     specifier: ^5.4.5
     version: 5.4.5
+  zod:
+    specifier: ^3.23.8
+    version: 3.23.8
 
 packages:
 
@@ -282,6 +291,16 @@ packages:
   /@eslint/js@8.57.0:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
+  /@hono/zod-validator@0.2.2(hono@4.4.3)(zod@3.23.8):
+    resolution: {integrity: sha512-dSDxaPV70Py8wuIU2QNpoVEIOSzSXZ/6/B/h4xA7eOMz7+AarKTSGV8E6QwrdcCbBLkpqfJ4Q2TmBO0eP1tCBQ==}
+    peerDependencies:
+      hono: '>=3.9.0'
+      zod: ^3.19.1
+    dependencies:
+      hono: 4.4.3
+      zod: 3.23.8
     dev: true
 
   /@humanwhocodes/config-array@0.11.14:
@@ -1514,6 +1533,11 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       function-bind: 1.1.2
+    dev: true
+
+  /hono@4.4.3:
+    resolution: {integrity: sha512-G7rTruKzrHXPz1KB4B50deKydPA9+aeei+WC1hikP0abN9N+a6yORuweageaqWocYfYNkpoqA5ezGV2mzQasvw==}
+    engines: {node: '>=16.0.0'}
     dev: true
 
   /hosted-git-info@2.8.9:
@@ -3384,4 +3408,8 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  /zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
     dev: true

@@ -7,4 +7,6 @@ export default defineConfig({
   splitting: false,
   sourcemap: false,
   clean: true,
+  treeshake: true,
+  external: ['@hono/zod-validator', 'hono', 'zod'],
 })
