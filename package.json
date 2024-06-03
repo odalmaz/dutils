@@ -1,0 +1,46 @@
+{
+  "name": "@odalmaz/dutils",
+  "version": "0.0.1",
+  "description": "Dev Utils",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "release": "np"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/odalmaz/dutils.git"
+  },
+  "homepage": "https://github.com/odalmaz/dutils",
+  "engines": {
+    "node": ">=18.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "eslint": "^8.57.0",
+    "np": "^7.7.0",
+    "prettier": "^3.3.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.4.5"
+  }
+}
